@@ -3,8 +3,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import AddTodo from './src/app/components/AddTodo';
-import { TodoList } from './src/app/components/TodoList';
+import TodoList from './src/app/components/TodoList';
 import { AntDesign, Feather } from '@expo/vector-icons'
+import EditTodo from './src/app/components/EditTodo';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,6 +31,10 @@ const TodoListStackComponent = () => {
       <TodoListStack.Screen
       name="タスク一覧"
       component={TodoList}
+      />
+      <AddTodoStack.Screen
+      name="タスク編集"
+      component={EditTodo}
       />
     </TodoListStack.Navigator>
   )
