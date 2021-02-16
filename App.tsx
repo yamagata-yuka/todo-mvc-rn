@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
-import { AddTodo } from './src/app/components/AddTodo';
+import AddTodo from './src/app/components/AddTodo';
 import { TodoList } from './src/app/components/TodoList';
 import { AntDesign, Feather } from '@expo/vector-icons'
 
