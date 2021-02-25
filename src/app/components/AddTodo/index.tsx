@@ -60,7 +60,7 @@ const AddTodoPresentation: React.FC<Props> = ({
       />
       <SubmitSection>
       <Submit onPress={onSubmit}>
-        <Text>追加する</Text>
+        <SubmitText>追加する</SubmitText>
       </Submit>
       </SubmitSection>
     </Section>
@@ -69,33 +69,47 @@ const AddTodoPresentation: React.FC<Props> = ({
 
 const Section = styled(View)`
   flex: 1;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   background: #fff;
 `
 
 const Input = styled(TextInput)`
-  height: 40px;
-  width: 200px;
-  margin-top: 10px;
-  padding: 10px 70px;
-  border: 2px solid #000;
+  height: 50px;
+  width: 80%;
+  padding: 10px;
+  border: 3px solid #191970;
+  margin: 15px;
+  border-radius: 5px;
+  font-size: 20px;
 `
 
 const Header = styled(Text)`
   font-weight: bold;
-  margin: 10px;
+  font-size: 18px;
+  background-color: #A4C6FF;
+  padding-top: 8px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  text-align: left;
+  height: 36px;
+  line-height: 20px;
 `
 const Submit = styled(TouchableHighlight)`
   width: 100px;
-  margin-top: 10px;
-  background: #f4d;
-  font-size: 25px;
+  background: #1168cd;
+  padding: 10px;
+  border: 1px solid #191970;
+  border-radius: 5px;
+  margin-left: 15px;
 `
 
 const SubmitSection = styled(View)`
-  background: #ff0;
   flex-direction: row;
+`
+const SubmitText = styled(Text)`
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
 `
 
 export default AddTodo;
