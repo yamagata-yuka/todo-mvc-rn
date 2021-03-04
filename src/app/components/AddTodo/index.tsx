@@ -19,10 +19,9 @@ const AddTodo = () => {
       status: "todo"
     }
     try {
-      await axios
-        .post('http://localhost:3000/todo',payload)
-        changeTodoTitle('')
-        changeCreated(true)
+      await axios.post('http://localhost:3000/todo',payload)
+      changeTodoTitle('')
+      changeCreated(true)
     } catch (err) {
       console.error(err)
     }

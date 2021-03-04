@@ -5,44 +5,6 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 import axios from 'axios';
 
-const dummyData = [
-  {
-    title: "TODO",
-    data: [
-      {
-        id: "xxxx-yyyy-zzzz",
-        title: "taskを削除できるようにする",
-        status: "todo"
-      },
-      {
-        id: "xxxx-yyyy-zzzz",
-        title: "taskを削除できるようにする part2",
-        status: "todo"
-      },
-    ]
-  },
-  {
-    title: "DOING",
-    data: [
-      {
-        id: "dddd-eeee-ffff",
-        title: "タスク一覧画面を作る",
-        status: "DOING"
-      },
-    ]
-  },
-  {
-    title: "DONE",
-    data: [
-      {
-        id: "aaaa-bbbb-cccc",
-        title: "Snackbarの見た目を整える",
-        status: "done"
-      },
-    ]
-  }
-]
-
 type Sections = null | {
   title: string
   data: Array<Task>

@@ -32,7 +32,7 @@ const TodoListStackComponent = () => {
       name="タスク一覧"
       component={TodoList}
       />
-      <AddTodoStack.Screen
+      <TodoListStack.Screen
       name="タスク編集"
       component={EditTodo}
       />
